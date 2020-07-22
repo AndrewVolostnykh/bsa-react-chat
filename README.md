@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+А теперь то, чего больше всего ждут академисты - поработать с React. Ух, будет интересно!
 
-In the project directory, you can run:
+Задание
+Нужно написать приложение Чат. User Iinterface чата должен содержать следующие блоки:
 
-### `yarn start`
+header: отдельный компонент, который содержит название чата, количество пользователей, количество сообщений, дата последнего сообщения
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+message list: отдельный компонент который содержит список сообщений. Список должен быть разделен по дням (линия с указанным днем, типа "Yesterday", Monday, 17 June ", etc.)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+message input: отдельный компонент, который содержит текстовое поле и кнопку "Send" mock
 
-### `yarn test`
+Требования к заданию:
+весь User Interface должен быть построен на компонентах и ​​находиться в главном компоненте-контейнере Chat
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+данные загружаются в Chat со стороннего ресурса и дальше хранятся в state этого компонента
 
-### `yarn build`
+при загрузке страницы появляется Спиннер, и исчезает после того, как данные загрузились
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+чат должен иметь следующий функционал:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+писать сообщения в чат
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+редактировать сообщение (личное)
 
-### `yarn eject`
+удалять сообщение (личное)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ставить лайк (не личное)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+каждое сообщение должно содержать следующие блоки:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+аватар (кроме собственного сообщения)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+текст сообщения
 
-## Learn More
+дата сообщения
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+лайк
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Использовать только библиотеку React (без backend, без Redux и других библиотек)
 
-### Code Splitting
+Что будет оцениваться
+При оценивании будут учитываться следующие критерии:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+функционал
 
-### Analyzing the Bundle Size
+структура компонентов
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+инкапсуляция данных (компонент должен получать данные через props, локальный state только там, где необходимо)
 
-### Making a Progressive Web App
+чистота кода
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Максимальный балл: 9. Еще один балл можно получить, если:
 
-### Advanced Configuration
+Задеплоить работу на любой сервис, например Heroku
+Сделать классный UI / UX
+Реализовать дополнительные фичи, прокачать функционал чата
+Использовать функциональные подходы, паттерны
+TypeScript
+Список сообщений можно получить здесь
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Желаю Удачи!
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+P.S. Можно использовать любые CSS библиотеки
