@@ -35,7 +35,7 @@ const CardFotterChildStyle = {
     flex: "1"
 }
 
-const MessageList = ({ messages, numberOfMessages, currentUser, likeMessageHandler }) => {
+const MessageList = ({ messages, numberOfMessages, currentUser, likeMessageHandler, editModeHandler, deleteMessageHandler }) => {
 
     const [isLiked, setIsLiked] = useState(false);
 
@@ -76,15 +76,15 @@ const MessageList = ({ messages, numberOfMessages, currentUser, likeMessageHandl
                                                 }
                                                 {
                                                     isCurrentUser && (
-                                                        <IconButton >
-                                                            <DeleteIcon />
+                                                        <IconButton onClick={() => {deleteMessageHandler(i)}}>
+                                                            <DeleteIcon  />
                                                         </IconButton>
                                                     )
                                                 }
                                                 {
                                                     isCurrentUser && (
-                                                        <IconButton >
-                                                            <CreateIcon />
+                                                        <IconButton  onClick={() => {editModeHandler(i)}}>
+                                                            <CreateIcon/>
                                                         </IconButton>
                                                     )
                                                 }

@@ -6,7 +6,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import PeopleIcon from '@material-ui/icons/People';
 
 const IconsStyle = {
-    marginLeft: "20px"
+    marginLeft: "30px"
 }
 
 
